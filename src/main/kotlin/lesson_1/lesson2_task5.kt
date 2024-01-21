@@ -2,9 +2,12 @@ package lesson_1
 
 fun main() {
     val secondsInSpace = 6480
-    val second = secondsInSpace % 60
-    val minute = secondsInSpace / 60 - 60
-    val hour = secondsInSpace / 3600
+    val secondsInMinute = 60
+    val fullMinute = secondsInSpace / secondsInMinute
+    val second = secondsInSpace - (fullMinute * secondsInMinute)
+    val hour = fullMinute / secondsInMinute
+    val minute = fullMinute - (hour * secondsInMinute)
 
-    println("0$hour:$minute:0${second}")
+    val result = String.format("%02d:%02d:%02d", hour, minute, second)
+    println(result)
 }
