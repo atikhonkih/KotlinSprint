@@ -6,6 +6,6 @@ fun main() {
     val student3 = 3
     val student4 = 5
 
-    val midScore = (student1 + student2 + student3 + student4) / 4.0
+    val midScore = (student1 + student2 + student3 + student4).toFloat() / 4
     println(midScore)
 }
