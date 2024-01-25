@@ -13,4 +13,4 @@ fun main() {
         $multiplier x 8 = ${multiplier * 8}
         $multiplier x 9 = ${multiplier * 9}
     """.trimIndent())
-}
+    
